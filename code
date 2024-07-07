@@ -1,0 +1,34 @@
+1(b) 
+2(b) 
+3(b) 
+4(b) 
+5(b) 
+6(a)const names = people.map(person => person.name);
+    console.log(names);
+6(b)const peopleSalary = people.map(person => ({ ...person, salary: 50000 }));
+    console.log(peopleSalary);
+6(c)const peopleAbove30 = people
+  .filter(person => person.age > 30)
+  .map(person => ({ name: person.name, age: person.age }));
+  console.log(peopleAbove30);
+7)function cb1(a, b) {
+    return a + b;
+  }
+  function cb2(a, b) {
+    return a - b;
+  }
+  function main(cb1, cb2, x, y) {
+    const res1 = cb1(x, y);
+    const res2 = cb2(x, y);
+    return [res1, res2];
+  }
+  const x = 11;
+  const y = 4;
+  const [res1, res2] = main(cb1, cb2, x, y);
+  console.log("addition", res1);
+  console.log("difference", res2);
+8)(c)
+10)C)
+11(B)
+12(A)
+13)(D)
